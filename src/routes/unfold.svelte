@@ -8,8 +8,6 @@
 		<h1 class="shadow">And I watched the water unfold</h1>
 		<h1 class="shadow">And I watched the water unfold</h1>
 		<h1 class="shadow">And I watched the water unfold</h1>
-		<h1 class="shadow">And I watched the water unfold</h1>
-		<h1 class="shadow">And I watched the water unfold</h1>
 	</div>
 	<p>It's a feeling I want you to know.</p>
 </section>
@@ -40,26 +38,53 @@
 		position: relative;
 	}
 	.title-main {
-		z-index: 1;
+		z-index: 3;
 		position: relative;
 	}
 	.shadow {
 		position: absolute;
 		top: 0;
 		left: 0;
-		animation: hue-rotate 2s ease-in-out infinite alternate;
-		color: red;
+	}
+	.shadow:nth-child(n) {
+		color: rgb(255, 0, 0);
+		animation: s-skew 2s ease-in-out infinite alternate;
+		z-index: 2;
 	}
 	.shadow:nth-child(2) {
-		color: blue;
-		animation-delay: 0.1s;
+		color: rgb(0, 0, 255);
+		/* animation-delay: 0.1s; */
+		animation: m-skew 2s ease-in-out infinite alternate;
+		z-index: 1;
 	}
-	@keyframes hue-rotate {
+	.shadow:nth-child(3) {
+		color: rgb(0, 255, 0);
+		/* animation-delay: 0.1s; */
+		animation: l-skew 2s ease-in-out infinite alternate;
+		z-index: 0;
+	}
+	@keyframes s-skew {
 		0% {
-			transform: skewX(-15deg);
+			transform: skewX(-5deg);
 		}
 		100% {
-			transform: skewX(15deg);
+			transform: skewX(5deg);
+		}
+	}
+	@keyframes m-skew {
+		0% {
+			transform: skewX(-7.5deg);
+		}
+		100% {
+			transform: skewX(7.5deg);
+		}
+	}
+	@keyframes l-skew {
+		0% {
+			transform: skewX(-10deg);
+		}
+		100% {
+			transform: skewX(10deg);
 		}
 	}
 	.scene {
