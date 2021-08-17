@@ -59,44 +59,44 @@
 		left: 0;
 	}
 	.shadow:nth-child(n) {
-		color: rgb(255, 0, 0);
+		color: rgba(255, 0, 0, 0.7);
 		animation: s-skew 2s ease-in-out infinite alternate;
 		z-index: 2;
 	}
 	.shadow:nth-child(2) {
-		color: rgb(0, 0, 255);
+		color: rgba(0, 0, 255, 0.7);
 		/* animation-delay: 0.1s; */
 		animation: m-skew 2s ease-in-out infinite alternate;
 		z-index: 1;
 	}
 	.shadow:nth-child(3) {
-		color: rgb(0, 255, 0);
+		color: rgba(0, 255, 0, 0.7);
 		/* animation-delay: 0.1s; */
 		animation: l-skew 2s ease-in-out infinite alternate;
 		z-index: 0;
 	}
 	@keyframes s-skew {
 		0% {
-			transform: skewX(-5deg);
+			transform: scaleX(1);
 		}
 		100% {
-			transform: skewX(5deg);
+			transform: scaleX(1.025);
 		}
 	}
 	@keyframes m-skew {
 		0% {
-			transform: skewX(-7.5deg);
+			transform: scaleX(1);
 		}
 		100% {
-			transform: skewX(7.5deg);
+			transform: scaleX(1.05);
 		}
 	}
 	@keyframes l-skew {
 		0% {
-			transform: skewX(-10deg);
+			transform: scaleX(1);
 		}
 		100% {
-			transform: skewX(10deg);
+			transform: scaleX(1.075);
 		}
 	}
 	.scene {
