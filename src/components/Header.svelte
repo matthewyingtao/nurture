@@ -17,7 +17,7 @@
 		z-index: 999;
 	}
 	header a {
-		color: white;
+		color: inherit;
 	}
 	h3 {
 		margin: 0;
@@ -30,10 +30,10 @@
 		margin: 0;
 	}
 	nav a {
-		color: white;
+		color: inherit;
 		text-decoration: none;
 		padding: 0.3rem 0.5rem;
-		border: white solid 1px;
+		border: solid 1px;
 	}
 	nav a:first-child {
 		border-right: none;

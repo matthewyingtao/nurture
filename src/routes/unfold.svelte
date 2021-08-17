@@ -1,29 +1,40 @@
+<script>
+	import Header from '../components/Header.svelte';
+</script>
+
 <svelte:head>
 	<title>unfold</title>
 </svelte:head>
 
-<section>
-	<div class="heading">
-		<h1 class="title-main">And I watched the water unfold</h1>
-		<h1 class="shadow">And I watched the water unfold</h1>
-		<h1 class="shadow">And I watched the water unfold</h1>
-		<h1 class="shadow">And I watched the water unfold</h1>
-	</div>
-	<p>It's a feeling I want you to know.</p>
-</section>
+<main>
+	<Header />
+	<section>
+		<div class="heading">
+			<h1 class="title-main">And I watched the water unfold</h1>
+			<h1 class="shadow">And I watched the water unfold</h1>
+			<h1 class="shadow">And I watched the water unfold</h1>
+			<h1 class="shadow">And I watched the water unfold</h1>
+		</div>
+		<p>It's a feeling I want you to know.</p>
+	</section>
 
-<div class="scene">
-	<div class="cube">
-		<div class="face front" />
-		<div class="face right" />
-		<div class="face back" />
-		<div class="face left" />
-		<div class="face top" />
-		<div class="face bottom" />
+	<div class="scene">
+		<div class="cube">
+			<div class="face front" />
+			<div class="face right" />
+			<div class="face back" />
+			<div class="face left" />
+			<div class="face top" />
+			<div class="face bottom" />
+		</div>
 	</div>
-</div>
+</main>
 
 <style>
+	main {
+		background: white;
+		color: black;
+	}
 	section {
 		max-width: 1140px;
 		margin: auto;
@@ -33,6 +44,7 @@
 	h1 {
 		font-size: 5em;
 		margin: 0;
+		color: white;
 	}
 	.heading {
 		position: relative;
@@ -95,7 +107,6 @@
 		width: 250px;
 		height: 250px;
 		perspective: 500px;
-		filter: drop-shadow(0 0 7rem rgba(255, 255, 255, 0.45));
 		animation: float 3s ease-in-out alternate infinite;
 	}
 	.cube {
@@ -108,8 +119,10 @@
 	@keyframes float {
 		from {
 			transform: translateY(125px);
+			filter: drop-shadow(0 calc(20em - 250px) 2rem rgba(0, 0, 0, 0.6));
 		}
 		to {
+			filter: drop-shadow(0 20em 6rem rgba(0, 0, 0, 0.3));
 			transform: translateY(0px);
 		}
 	}
@@ -123,7 +136,7 @@
 		}
 	}
 	.face {
-		background-image: url('water.jpg');
+		background-image: url('/water.jpg');
 		background-size: cover;
 		background-repeat: no-repeat;
 		height: 250px;

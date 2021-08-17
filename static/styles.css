@@ -6,3 +6,16 @@ body {
 	color: white;
 	overflow-x: hidden;
 }
+
+*,
+::before,
+::after {
+	box-sizing: border-box;
+	transform-style: preserve-3d;
+}
+
+main {
+	min-height: 100vh;
+	max-height: 200vh;
+	overflow: hidden;
+}
