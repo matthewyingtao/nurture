@@ -1,10 +1,10 @@
 <header id="header">
 	<h3><a href=".">Nurture.</a></h3>
 	<nav>
-		<a href=".">wish</a>
-		<a href="unfold">unfold</a>
-		<a href="sky">look at the sky</a>
-		<a href="blossom">blossom</a>
+		<a href="/">wish</a>
+		<a href="/unfold">unfold</a>
+		<a href="/sky">look at the sky</a>
+		<a href="/blossom">blossom</a>
 	</nav>
 </header>
 

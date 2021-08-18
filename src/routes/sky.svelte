@@ -14,7 +14,7 @@
 				<h1>{line}</h1>
 			{/each}
 		</Typewriter>
-		<a href="blossom">
+		<a href="/blossom">
 			<svg
 				version="1.1"
 				id="flower"

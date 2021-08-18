@@ -18,7 +18,7 @@
 		<p>It's a feeling I want you to know.</p>
 	</section>
 
-	<a href="sky">
+	<a href="/sky">
 		<div class="scene">
 			<div class="cube">
 				<div class="face front" />

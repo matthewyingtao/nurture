@@ -17,7 +17,7 @@
 </svelte:head>
 <main>
 	<Header />
-	<a href="unfold">
+	<a href="/unfold">
 		<div use:ready class="wish">
 			<div class="img-container" data-depth="1.2">
 				<img class="water" src="water.jpg" alt="get your wish" />
