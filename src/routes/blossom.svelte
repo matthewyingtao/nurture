@@ -5,29 +5,42 @@
 <main>
 	<Header />
 	<section>
+		<h2>And we wished each other well</h2>
 		<div class="dirt-container">
-			<img class="dirt" src="dirt.jpg" alt="dirt" />
+			<img class="dirt" src="./dirt.jpg" alt="dirt" />
 		</div>
 		<a href="wind">
 			<div class="fire">
-				<img class="red" src="fire-red.png" alt="fire" />
-				<img class="orange" src="fire-orange.png" alt="fire" />
-				<img class="yellow" src="fire-yellow.png" alt="fire" />
+				<img class="red" src="/fire-red.png" alt="fire" />
+				<img class="orange" src="/fire-orange.png" alt="fire" />
+				<img class="yellow" src="/fire-yellow.png" alt="fire" />
 			</div>
 		</a>
 	</section>
 </main>
 
 <style>
+	main {
+		display: flex;
+		flex-direction: column;
+	}
 	section {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		position: relative;
+		height: 100%;
+		width: 100%;
+	}
+	h2 {
+		position: absolute;
+		top: 0;
+		font-size: 4em;
+		font-weight: 200;
 	}
 	.fire {
 		position: relative;
 		z-index: 2;
-		margin-top: 5em;
 	}
 	.fire img {
 		height: 25em;

@@ -81,13 +81,14 @@
 		background-image: url('/sky.jpg');
 		background-size: cover;
 		background-repeat: no-repeat;
+		display: flex;
+		flex-direction: column;
 	}
 	section {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		margin-top: 15em;
 	}
 	h1 {
 		font-weight: 200;

@@ -20,7 +20,7 @@
 	<a href="/unfold">
 		<div use:ready class="wish">
 			<div class="img-container" data-depth="1.2">
-				<img class="water" src="water.jpg" alt="get your wish" />
+				<img class="water" src="/water.jpg" alt="get your wish" />
 				<div class="reflect">
 					<img src="water.jpg" alt="get your wish" />
 					<div class="reflect-gradient" />

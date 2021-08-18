@@ -1,11 +1,16 @@
+<script>
+	export let isWhite = true;
+</script>
+
 <header id="header">
 	<h3><a href=".">Nurture.</a></h3>
-	<nav>
+	<nav class:white={isWhite}>
 		<a href="/">wish</a>
 		<a href="/unfold">unfold</a>
 		<a href="/sky">look at the sky</a>
 		<a href="/blossom">blossom</a>
 		<a href="/wind">wind</a>
+		<a href="/flicker">flicker</a>
 	</nav>
 </header>
 
@@ -36,6 +41,25 @@
 		text-decoration: none;
 		padding: 0.3rem 0.5rem;
 		border: solid 1px;
+		transition: color 250ms ease-out;
+		cursor: pointer;
+	}
+	nav a:hover {
+		color: black;
+	}
+	nav a::after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		height: 0%;
+		width: 100%;
+		background-color: white;
+		z-index: -1;
+		transition: height 250ms ease-out;
+	}
+	nav a:hover::after {
+		height: 100%;
 	}
 	nav a:first-child {
 		border-right: none;
