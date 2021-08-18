@@ -8,7 +8,6 @@
 
 <main>
 	<Header />
-	<img class="bg" src="/snow.jpg" alt="snowy forest" />
 	<section>
 		<div class="heading">
 			<h1 class="title-main">And I watched the water unfold</h1>
@@ -35,17 +34,10 @@
 
 <style>
 	main {
-		background: white;
 		color: black;
-	}
-	.bg {
-		position: absolute;
-		z-index: -2;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
+		background: url('/snow.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
 	}
 	h1 {
 		font-size: 5em;
@@ -107,7 +99,6 @@
 	}
 	.scene {
 		position: absolute;
-		z-index: -1;
 		top: 15%;
 		right: 20%;
 		width: 250px;

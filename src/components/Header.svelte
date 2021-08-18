@@ -44,6 +44,7 @@
 		border-bottom: solid 1px;
 		transition: color 250ms ease-out;
 		cursor: pointer;
+		position: relative;
 	}
 	nav a:hover {
 		color: black;
