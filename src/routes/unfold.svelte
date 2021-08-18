@@ -8,6 +8,7 @@
 
 <main>
 	<Header />
+	<img class="bg" src="/snow.jpg" alt="snowy forest" />
 	<section>
 		<div class="heading">
 			<h1 class="title-main">And I watched the water unfold</h1>
@@ -36,6 +37,15 @@
 	main {
 		background: white;
 		color: black;
+	}
+	.bg {
+		position: absolute;
+		z-index: -2;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
 	}
 	h1 {
 		font-size: 5em;

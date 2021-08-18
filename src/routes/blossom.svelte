@@ -8,11 +8,13 @@
 		<div class="dirt-container">
 			<img class="dirt" src="dirt.jpg" alt="dirt" />
 		</div>
-		<div class="fire">
-			<img class="red" src="fire-red.png" alt="fire" />
-			<img class="orange" src="fire-orange.png" alt="fire" />
-			<img class="yellow" src="fire-yellow.png" alt="fire" />
-		</div>
+		<a href="wind">
+			<div class="fire">
+				<img class="red" src="fire-red.png" alt="fire" />
+				<img class="orange" src="fire-orange.png" alt="fire" />
+				<img class="yellow" src="fire-yellow.png" alt="fire" />
+			</div>
+		</a>
 	</section>
 </main>
 

@@ -5,6 +5,7 @@
 		<a href="/unfold">unfold</a>
 		<a href="/sky">look at the sky</a>
 		<a href="/blossom">blossom</a>
+		<a href="/wind">wind</a>
 	</nav>
 </header>
 
