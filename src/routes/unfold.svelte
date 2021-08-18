@@ -148,6 +148,8 @@
 		height: 250px;
 		width: 250px;
 		position: absolute;
+		outline: 1px red solid;
+		animation: fade 2s ease-out alternate infinite;
 	}
 	.front {
 		transform: rotateY(0deg) translateZ(125px);
@@ -166,5 +168,19 @@
 	}
 	.bottom {
 		transform: rotateX(-90deg) translateZ(125px);
+	}
+	@keyframes fade {
+		0% {
+			outline: 2px red solid;
+			opacity: 0.25;
+		}
+		50% {
+			outline: 4px green solid;
+			opacity: 0.5;
+		}
+		100% {
+			outline: 6px blue solid;
+			opacity: 0.75;
+		}
 	}
 </style>
