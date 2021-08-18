@@ -5,12 +5,12 @@
 <header id="header">
 	<h3><a href=".">Nurture.</a></h3>
 	<nav class:white={isWhite}>
-		<a href="/">wish</a>
-		<a href="/unfold">unfold</a>
-		<a href="/sky">look at the sky</a>
-		<a href="/blossom">blossom</a>
-		<a href="/wind">wind</a>
-		<a href="/flicker">flicker</a>
+		<a href=".">wish</a>
+		<a href="unfold">unfold</a>
+		<a href="sky">look at the sky</a>
+		<a href="blossom">blossom</a>
+		<a href="wind">wind</a>
+		<a href="flicker">flicker</a>
 	</nav>
 </header>
 
@@ -40,7 +40,8 @@
 		color: inherit;
 		text-decoration: none;
 		padding: 0.3rem 0.5rem;
-		border: solid 1px;
+		border-top: solid 1px;
+		border-bottom: solid 1px;
 		transition: color 250ms ease-out;
 		cursor: pointer;
 	}
@@ -61,13 +62,17 @@
 	nav a:hover::after {
 		height: 100%;
 	}
+	nav a:nth-child(2n) {
+		border-left: 1px solid;
+		border-right: 1px solid;
+	}
 	nav a:first-child {
-		border-right: none;
+		border-left: 1px solid;
 		border-top-left-radius: 0.25rem;
 		border-bottom-left-radius: 0.25rem;
 	}
 	nav a:last-child {
-		border-left: none;
+		border-right: 1px solid;
 		border-top-right-radius: 0.25rem;
 		border-bottom-right-radius: 0.25rem;
 	}
