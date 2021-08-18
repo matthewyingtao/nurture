@@ -29,6 +29,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		pointer-events: none;
 	}
 	h2 {
 		font-weight: 200;
