@@ -37,6 +37,8 @@
 <style>
 	main {
 		background: black;
+		max-height: 200vh;
+		overflow: hidden;
 	}
 	.wish {
 		display: flex;

@@ -16,6 +16,11 @@ body {
 
 main {
 	min-height: 100vh;
-	max-height: 200vh;
-	overflow: hidden;
+}
+
+section {
+	max-width: 1140px;
+	margin: auto;
+	padding: 0 1rem;
+	position: relative;
 }

@@ -18,28 +18,24 @@
 		<p>It's a feeling I want you to know.</p>
 	</section>
 
-	<div class="scene">
-		<div class="cube">
-			<div class="face front" />
-			<div class="face right" />
-			<div class="face back" />
-			<div class="face left" />
-			<div class="face top" />
-			<div class="face bottom" />
+	<a href="sky">
+		<div class="scene">
+			<div class="cube">
+				<div class="face front" />
+				<div class="face right" />
+				<div class="face back" />
+				<div class="face left" />
+				<div class="face top" />
+				<div class="face bottom" />
+			</div>
 		</div>
-	</div>
+	</a>
 </main>
 
 <style>
 	main {
 		background: white;
 		color: black;
-	}
-	section {
-		max-width: 1140px;
-		margin: auto;
-		padding: 0 1rem;
-		position: relative;
 	}
 	h1 {
 		font-size: 5em;
@@ -136,7 +132,7 @@
 		}
 	}
 	.face {
-		background-image: url('/water.jpg');
+		background-image: url('/sky.jpg');
 		background-size: cover;
 		background-repeat: no-repeat;
 		height: 250px;
