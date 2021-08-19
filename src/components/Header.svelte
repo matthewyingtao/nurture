@@ -11,6 +11,7 @@
 		<a href="blossom">blossom</a>
 		<a href="wind">wind</a>
 		<a href="flicker">flicker</a>
+		<a href="mirror">mirror</a>
 	</nav>
 </header>
 
